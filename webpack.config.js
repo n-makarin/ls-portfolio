@@ -78,7 +78,12 @@ module.exports = (env, argv) => {
         use: ["pug-plain-loader"]
       },
       {
-        use: ["pug-loader"]
+        use: {
+          loader: 'pug-loader',
+          options: {
+            root: path.resolve(__dirname, 'src')
+          }
+        }
       }
     ]
   };
@@ -100,7 +105,8 @@ module.exports = (env, argv) => {
     resolve: {
       alias: {
         vue$: "vue/dist/vue.esm.js",
-        images: path.resolve(__dirname, "src/images")
+        images: path.resolve(__dirname, "src/images"),
+        // root: path.resolve(__dirname, "src")
       },
       extensions: ["*", ".js", ".vue", ".json"]
     },
