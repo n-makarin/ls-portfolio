@@ -1,1 +1,7 @@
-nav
+- var linkList = ['Главная', 'Обо мне', 'Навыки', 'Работы', 'Сязаться'];
+
+nav.nav
+  ul
+    each link, index in linkList
+      li
+        a= link
