@@ -1,20 +1,22 @@
 -
   var networksList = [
     {
+      iconName: 'insta',
+      path: 'https://www.instagram.com/n.makarin'
+    },
+    {
       iconName: 'vk',
       path: 'https://vk.com/nmakarin'
     },
     {
       iconName: 'github',
       path: 'https://github.com/n-makarin'
-    },
-    {
-      iconName: 'insta',
-      path: 'https://www.instagram.com/n.makarin'
     }
   ]
 
+-var linkClass = 'social-networks__item'
+
 .social-networks
   each item, index in networksList 
-    a(href=item.path, target="_blank").social-networks__item
+    a(href=item.path, target="_blank" class=`${linkClass}  ${linkClass}_${item.iconName}`)
       +icon(item.iconName, '')
