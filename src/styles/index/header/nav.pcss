@@ -1,9 +1,16 @@
 .nav {
   ul {
     display: flex;
-    li > a {
-      font-size: 16px;
-      color: $dark-blue;
+    justify-content: space-between;
+    li {
+      margin-right: 62px;
+      &:last-child {
+        margin-right: 0;
+      }
+      > a {
+        font-size: 16px;
+        color: $dark-blue;
+      }
     }
   }
 }
