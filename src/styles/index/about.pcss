@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  padding-bottom: 129px;
+  &__data {
+    width: 347px;
+    margin-right: 113px;
+  }
+  &__avatar {
+    width: 211px;
+    height: 211px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url("../images/content/user.jpg") 50% 65% / 130% no-repeat;
+    margin-bottom: 80px;
+  }
+  &-detail {
+    &__raw {
+      display: flex;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__title {
+      width: 50%;
+      opacity: .3;
+    }
+    &__value {
+      width: 50%;
+    }
+  }
+  &__description {
+    max-width: 531px;
+  }
+  &__text {
+    font-weight: bold;
+    opacity: .5;
+    line-height: 1.89;
+    &_italic {
+      margin-top: 92px;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+  &__name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 12px 0 28px;
+  }
+}
