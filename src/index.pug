@@ -9,9 +9,9 @@ html(lang="en")
     title Portfolio | main page
   body
     +section('main')
-      include index/header.pug
-      include index/title.pug
-      include index/scroll-trigger.pug
+      +header('main__header')
+      +title('main__title')
+      +scroll-trigger('main__scroll-trigger')
     +section('about')
     +section('skills')
     +section('abprojectsout')

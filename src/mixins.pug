@@ -11,3 +11,15 @@ mixin section(name)
     .wrapper
       .container
         block
+
+mixin header(className)
+  div(class=className)
+    include index/header.pug
+
+mixin title(className)
+  div(class=className)
+    include index/title.pug
+
+mixin scroll-trigger(className)
+  div(class=className)
+    include index/scroll-trigger.pug
