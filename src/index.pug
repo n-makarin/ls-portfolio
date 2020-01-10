@@ -8,14 +8,15 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Portfolio | main page
   body
-    .bg-wrapper.bg-wrapper-1
+    .bg-wrapper.bg-wrapper_1
       +section('main')
         +header('main__header')
         +title('main__title')
         +scroll-trigger('main__scroll-trigger')
       +section('about')
+        include index/about.pug
     +section('skills')
     +section('projects')
-    .bg-wrapper.bg-wrapper-2
+    .bg-wrapper.bg-wrapper_2
       +section('reviews')
       +section('contacts')
