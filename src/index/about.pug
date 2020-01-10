@@ -1,0 +1,31 @@
+-
+  var detailData = [
+    {
+      title: 'Проживаю',
+      value: 'Ярославль'
+    },
+    {
+      title: 'Возраст',
+      value: '24 года'
+    },
+    {
+      title: 'Родился',
+      value: '24 марта 1995'
+    }
+  ]
+
+.about
+  .about__data
+    .about__avatar
+    .about__detail.about-detail
+      each item in detailData
+        .about-detail__raw
+          .about-detail__title=item.title
+          .about-detail__value=item.value
+
+
+  .about__description
+    .about__text Привет, меня зовут
+    .about__name Никита Макарьин
+    .about__text Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+    .about__text.about__text_italic Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
