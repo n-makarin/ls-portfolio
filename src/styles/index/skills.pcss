@@ -1,6 +1,16 @@
 .skills {
   padding-top: 142px;
-  margin-left: 504px;
+  &__wrapper {
+    display: flex;
+  }
+  &__image {
+    width: 100%;
+    max-width: 504px;
+    background: url('../images/content/backpack.jpg') 50% 65% / 130% no-repeat;
+  }
+  &__content {
+   width: 100%;
+  }
   &__title {
     font-size: 30px;
     font-weight: bold;
@@ -12,6 +22,9 @@
     line-height: 1.89;
     max-width: 600px;
     margin-bottom: 84px;
+  }
+  &__group-list {
+    margin-left: 127px;
   }
   &-group {
     margin-bottom: 27px;
