@@ -41,6 +41,19 @@
       font-style: italic;
       font-weight: normal;
     }
+    &_asterisk {
+      position: relative;
+      &::before {
+        content: '*';
+        position: absolute;
+        top: 0;
+        left: -60px;
+        opacity: .1;
+        font-size: 48px;
+        line-height: 1;
+        color: $red;
+      }
+    }
   }
   &__name {
     font-size: 36px;
