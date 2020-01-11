@@ -1,0 +1,43 @@
+-
+  var skillGroups = [ 
+    { 
+      title: 'Frontend', 
+      skills: [ { name: 'HTML5', percent: 45 }, { name: 'CSS', percent: 23 }, { name: 'JavaScript', percent: 45 }, { name: 'VueJS', percent: 67 }] 
+    }, 
+    { 
+      title: 'Workflow', 
+      skills: [ { name: 'GIT', percent: 75 }, { name: 'Terminal', percent: 23 }, { name: 'Gulp', percent: 45 }, { name: 'Webpack', percent: 67 }] 
+    }
+  ]
+
+.skills__title Чем я могу быть полезен вам
+.skills__description Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+.skills__group-list
+  each group in skillGroups
+    .skills-group
+      .skills-group__title= group.title
+      .skills-group__list
+        each skill in group.skills
+          .skills-group__item.skills-item
+              svg.skills-item__chart(viewBox="0 0 100 100", percent=skill.percent)
+                circle.skills-item__circle(
+                  cx="50" 
+                  cy="50" 
+                  r="40" 
+                  fill="transparent" 
+                  stroke="#e9e9e9" 
+                  stroke-width="5"
+                )
+                circle.skills-item__circle.skills-item__round(
+                  cx="50" 
+                  cy="50" 
+                  r="40" 
+                  fill="transparent" 
+                  stroke="url(#gradient)" 
+                  stroke-width="10" 
+                  style="transform-origin: center; transform: rotate(-180deg);"
+                )
+                linearGradient#gradient
+                  stop(offset="0%" stop-color="#4a00ed")
+                  stop(offset="100%" stop-color="#7300ea")
+              .skills-item__name #{skill.name}
