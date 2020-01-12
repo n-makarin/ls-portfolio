@@ -19,6 +19,86 @@
           "name": "Javascript"
         }
       ]
+    },
+    {
+      "id": 2,
+      "imgPath": "src/images/temp/slide.jpg",
+      "title": "Интернет-магазин",
+      "description": "Интернет-магазин для продажи электроники и настенных ковров",
+      "tagList": [
+        {
+          "id": 1,
+          "name": "Django"
+        },
+        {
+          "id": 2,
+          "name": "MongoDB"
+        },
+        {
+          "id": 3,
+          "name": "TypeScript"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "imgPath": "src/images/temp/slide.jpg",
+      "title": "Онлайн сервис образования",
+      "description": "Сервис для изучения садоводства в засушливых районах восточной Монголии",
+      "tagList": [
+        {
+          "id": 1,
+          "name": "Golang"
+        },
+        {
+          "id": 2,
+          "name": "Vue.js"
+        },
+        {
+          "id": 3,
+          "name": "GrafQL"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "imgPath": "src/images/temp/slide.jpg",
+      "title": "Сайт для школы вождения",
+      "description": "Интерактивный портал для изучения особенностей общения в общественном транспорте",
+      "tagList": [
+        {
+          "id": 1,
+          "name": "Nuxt.js"
+        },
+        {
+          "id": 2,
+          "name": "Django"
+        },
+        {
+          "id": 3,
+          "name": "CSS3"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "imgPath": "src/images/temp/slide.jpg",
+      "title": "Личный блог",
+      "description": "Портал для просмотра статей и видео",
+      "tagList": [
+        {
+          "id": 1,
+          "name": "HTML5"
+        },
+        {
+          "id": 2,
+          "name": "CSS3"
+        },
+        {
+          "id": 3,
+          "name": "Javascript"
+        }
+      ]
     }
   ]
 } 
