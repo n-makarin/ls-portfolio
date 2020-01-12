@@ -1,0 +1,24 @@
+{
+  "projectList": [
+    {
+      "id": 1,
+      "imgPath": "src/images/temp/slide.jpg",
+      "title": "Сайт школы образования",
+      "description": "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!",
+      "tagList": [
+        {
+          "id": 1,
+          "name": "HTML"
+        },
+        {
+          "id": 2,
+          "name": "CSS"
+        },
+        {
+          "id": 3,
+          "name": "Javascript"
+        }
+      ]
+    }
+  ]
+} 
