@@ -5,8 +5,8 @@
     div(
       v-for="(item, index) in projectList" 
       :key="item.id" 
-      class="projects-slider__item"
-      v-if="item.id !==project.id && index < slider.trackMaxLength"  
+      :class="[trackItemClass, project.id === item.id ? trackItemClassAcrive : '']"
+      v-if="index < slider.trackMaxLength"  
       @click="setProject(item.id)"
     )
       img(:src="item.imgPath", alt="track-item")
