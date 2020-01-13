@@ -3,6 +3,8 @@
   "links-color": "#4b6fd7",
   "dark-blue": "#464e62",
   "red": "#db0200",
+  "orange": "#dc9322",
+  "blue": "#353e4e",
 
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
