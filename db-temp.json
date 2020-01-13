@@ -22,7 +22,7 @@
     },
     {
       "id": 2,
-      "imgPath": "src/images/temp/slide.jpg",
+      "imgPath": "https://source.unsplash.com/random/1600x900?a=1",
       "title": "Интернет-магазин",
       "description": "Интернет-магазин для продажи электроники и настенных ковров",
       "tagList": [
@@ -42,7 +42,7 @@
     },
     {
       "id": 3,
-      "imgPath": "src/images/temp/slide.jpg",
+      "imgPath": "https://source.unsplash.com/random/1600x900?b=2",
       "title": "Онлайн сервис образования",
       "description": "Сервис для изучения садоводства в засушливых районах восточной Монголии",
       "tagList": [
@@ -62,7 +62,7 @@
     },
     {
       "id": 4,
-      "imgPath": "src/images/temp/slide.jpg",
+      "imgPath": "https://source.unsplash.com/random/1600x900?c=3",
       "title": "Сайт для школы вождения",
       "description": "Интерактивный портал для изучения особенностей общения в общественном транспорте",
       "tagList": [
@@ -82,7 +82,7 @@
     },
     {
       "id": 5,
-      "imgPath": "src/images/temp/slide.jpg",
+      "imgPath": "https://source.unsplash.com/random/1600x900?d=4",
       "title": "Личный блог",
       "description": "Портал для просмотра статей и видео",
       "tagList": [
