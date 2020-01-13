@@ -41,11 +41,11 @@ const App = new Vue({
      * @returns void
      */
     prev() {
-      let index = 0
+      let index = this.projectList.length - 1
       for (let i = 0; i < this.projectList.length; i++) {
         if (this.projectList[i].id !== this.project.id) { continue }
-        if (i === 0) {
-          index = this.projectList.length - 1
+        if (i !== 0) {
+          index = i - 1
         }
         this.project = this.projectList[index]
         break
