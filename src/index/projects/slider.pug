@@ -1,7 +1,15 @@
-.projects__slider
+.projects__slider.projects-slider
   .projects-slider__image 
     img(:src="project.imgPath", alt="project")
   .projects-slider__track
+    div(
+      v-for="(item, index) in projectList" 
+      :key="item.id" 
+      class="projects-slider__item"
+      v-if="item.id !==project.id && index < slider.trackMaxLength"  
+      @click="setProject(item.id)"
+    )
+      img(:src="item.imgPath", alt="track-item")
   .projects-slider__arrows
-    .projects-slider__arrow-prev
-    .projects-slider__arrow-next
+    .projects-slider__arrow-prev(@click="prev" title="previous")
+    .projects-slider__arrow-next(@click="next" title="next")
