@@ -8,8 +8,10 @@ const App = new Vue({
       projectList: db.projectList,
       project: db.projectList[0],
       slider: {
-        trackMaxLength: 5
-      }
+        trackMaxLength: 4
+      },
+      trackItemClass: 'projects-slider__item',
+      trackItemClassAcrive: 'projects-slider__item_active',
     }
   },
   methods: {
