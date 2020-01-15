@@ -1,0 +1,48 @@
+.projects {
+  &__info {
+    width: 32%;
+  }
+  &-info {
+    &__tag-list {
+      margin-bottom: 40px;
+    }
+    &__tag {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 40px;
+      background: #eef0f4;
+      opacity: .7;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 32px;
+    }
+    &__description {
+      font-weight: bold;
+      opacity: .7;
+      line-height: 1.89;
+      margin-bottom: 32px;
+    }
+    &__link {
+      font-size: 18px;
+      font-weight: bold;
+      color: $light-blue;
+      text-decoration: none;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: svg-load('link.svg', fill=$light-blue, width=100%, height=100%);
+        margin-right: 20px;
+      }
+    }
+  }
+}

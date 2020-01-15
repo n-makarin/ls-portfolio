@@ -1,0 +1,10 @@
+.projects__info
+  .projects-info__tag-list
+    div(
+      v-for=" tag in project.tagList"
+      :key="tag.id"
+      class="projects-info__tag"
+    ) {{ tag.name }}
+  .projects-info__title {{ project.title }}
+  .projects-info__description {{ project.description }}
+  a(href="javascript:void(0)").projects-info__link Посмотреть сайт
