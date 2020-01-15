@@ -1,0 +1,20 @@
+.reviews__wrapper#reviews-app
+  .reviews__top-wrapper
+    .reviews__title Что обо мне говорят
+    .reviews__arrows
+      .reviews__arrow-prev
+      .reviews__arrow-next
+  .reviews__slider.reviews-slider
+    .reviews-slider__track
+      div(
+        class="reviews-slider__item reviews-item"
+        v-for="review in trackReviewList"
+        :key="review.id"
+      )
+        .reviews-item__text {{ review.text }}
+        .reviews-item__author
+          .reviews-item__photo
+            img(:src="review.author.imgPath" alt="author")
+          .reviews-item__info
+            .reviews-item__name {{ review.author.name }}
+            .reviews-item__post {{ review.author.post }}
