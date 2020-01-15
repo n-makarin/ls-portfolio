@@ -13,15 +13,17 @@
       height: 50px;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
       border-radius: 50%;
       border: 1px solid $text-color;
       &:first-child {
         margin-right: 30px;
       }
-      &:hover {
-        &::before {
-          opacity: .3;
+      &:not(.reviews-btn_disabled) {
+        cursor: pointer;
+        &:hover {
+          &::before {
+            opacity: .5;
+          }
         }
       }
       &::before {
@@ -109,5 +111,8 @@
       font-weight: bold;
       opacity: .3;
     }
+  }
+  &-btn_disabled {
+    opacity: .5;
   }
 }
