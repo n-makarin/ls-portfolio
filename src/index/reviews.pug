@@ -2,8 +2,8 @@
   .reviews__top-wrapper
     .reviews__title Что обо мне говорят
     .reviews__arrows
-      .reviews__arrow-prev
-      .reviews__arrow-next
+      .reviews__arrow-prev(@click="prev" ref="prev")
+      .reviews__arrow-next(@click="next" ref="next")
   .reviews__slider.reviews-slider
     .reviews-slider__track
       div(
