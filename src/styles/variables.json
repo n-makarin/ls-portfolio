@@ -1,10 +1,11 @@
 {
   "text-color": "#414c63",
   "links-color": "#4b6fd7",
+  "blue": "#353e4e",
   "dark-blue": "#464e62",
+  "light-blue": "#576ed3",
   "red": "#db0200",
   "orange": "#dc9322",
-  "blue": "#353e4e",
 
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
